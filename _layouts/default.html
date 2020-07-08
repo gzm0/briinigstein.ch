@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>{{ page.title | upcase }} | CHÂLET BRIINIGSTEIN</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/default.css" />
+    {% include analytics.html %}
+  </head>
+  <body>
+    <div id="outerwrap">
+      <div id="headline">
+        <span id="pagetitle">CHÂLET BRIINIGSTEIN</span>
+	{% include langselect.html %}
+        <img id="logo-right"
+             src="/assets/images/layout/logo_haslital.png"
+             alt="Logo Haslital"
+             width="129" height="43" />
+      </div>
+      <div id="leftwrap">
+	<div id="leftheader">
+          <img src="/assets/images/layout/header_small_top.jpg"
+               alt="Das Châlet im Sommer"
+               width="268" height="166" />
+          <img src="/assets/images/layout/header_small_bot.jpg"
+               alt="Das Châlet im Winter"
+               width="268" height="166" />
+        </div>
+	
+	{% include nav.html %}
+        <div id="contact-info">
+	  {% include contact.html %}
+        </div>
+      </div>
+
+      <div id="contentwrap">
+	{{ content }}
+      </div>
+    </div>
+  </body>
+</html>

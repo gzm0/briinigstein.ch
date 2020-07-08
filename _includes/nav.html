@@ -1,0 +1,8 @@
+<ul id="nav">
+  {% for item in site.data.nav %}
+  {% assign target=site.pages | where:"ref", item | where:"lang", page.lang | first %}
+  <li {% if page.url == target.url %}class="cur"{% endif %}>
+    <a href="{{ target.url }}"> {{ target.title | upcase }} </a>
+  </li>
+  {% endfor %}
+</ul>	  

@@ -1,0 +1,11 @@
+<span id="langselect">
+  {% for item in site.data.langs %}
+  {% if page.lang == item.lang %}
+  <span class="active">{{ item.title | upcase }}</span>
+  {% else %}
+  {% assign target=site.pages | where:"ref", page.ref | where:"lang", item.lang | first %}
+  <a href="{{ target.url }}">{{ item.title | upcase }}</a>
+  {% endif %}
+  {% if forloop.last == false %} / {% endif %}
+  {% endfor %}
+</span>

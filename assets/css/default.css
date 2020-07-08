@@ -1,0 +1,365 @@
+/* general stuff */
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: #4f6228;
+}
+
+a:hover, a:active {
+    text-decoration: underline;
+}
+
+dt {
+    font-weight: bold;
+}
+
+a:link img {
+    border: none;
+}
+/* Stylesheet: general Modified On 2013-01-01 23:49:21 */
+#contentwrap div.house-slogan {
+    font-size: 22px;
+    font-weight: bold;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 43px;
+}
+
+#contentwrap div.house-slogan .word1,
+#contentwrap div.house-slogan .word2,
+#contentwrap div.house-slogan .word2-en,
+#contentwrap div.house-slogan .word3 {
+    color: #4f6228;
+    position: absolute;
+}
+
+#contentwrap div.house-slogan .word1 { left: 410px; }
+#contentwrap div.house-slogan .word2 { left: 530px; }
+#contentwrap div.house-slogan .word2-en { left: 550px; }
+#contentwrap div.house-slogan .word3 { right: 0px; }
+
+#contentwrap .rightcol-img {
+    float: right;
+}
+
+#contentwrap .leftcol {
+    height: 132px;
+    position: relative;
+}
+
+#contentwrap .leftcol p {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    font-weight: bold;
+}
+
+#contentwrap .leftcol p.line1 { top: 0px; }
+#contentwrap .leftcol p.line2 { top: 23px; }
+#contentwrap .leftcol p.line3 { top: 56px; }
+#contentwrap .leftcol p.line4 { top: 84px; }
+#contentwrap .leftcol p.line5 { bottom: 0px; }
+
+
+/* width left  col: 410px */
+/* width right col: 341px */
+/* Stylesheet: home Modified On 2013-01-02 18:12:21 */
+/* general stuff */
+
+html, body {
+    background: #c1cc96;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#outerwrap {
+    margin: 0px auto;
+    width: 1024px;
+    min-height: 100%;
+    padding: 0px 25px 30px;
+    background: #ffffff;
+    overflow: auto;
+    position: relative;
+}
+
+/* head line */
+#headline {
+    padding: 16px 0px 12px;
+    position: relative;
+}
+
+#pagetitle {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#langselect {
+    position: relative;
+    left: 440px;
+    font-size: 14px;
+}
+
+#langselect a {
+    color: #000000;
+}
+
+#logo-right {
+    position: absolute;
+    right: 0px;
+    top: 17px;
+    z-index: 1000;
+}
+
+/* header */
+#header,
+#leftheader {
+    padding: 0px;
+    height: 339px;
+    margin: 0px 0px 5px;
+}
+
+/* leftwrap */
+#leftwrap {
+    float: left;
+    width: 268px; /* 5px padding to right */
+}
+
+/* content */
+#contentwrap {
+    margin-left: 273px;
+    width: 751px;
+}
+
+
+/* Stylesheet: layout Modified On 2013-01-01 23:14:17 */
+/* naviagtion */
+
+ul#nav {
+    padding: 6px 0px 0px;
+    margin: 0;
+}
+
+ul#nav li {
+    margin: 0;
+    padding: 0px 0px 16px 0px;
+    list-style-type: none;
+}
+
+ul#nav li a,
+ul#nav li a:link,
+ul#nav li a:visited {
+    font-size: 15px;
+    color: #4f6228;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+ul#nav li a:hover,
+ul#nav li a:active,
+ul#nav li.cur a:link,
+ul#nav li.cur a:visited {
+    color: #000000;
+}
+
+/* contact info */
+#contact-info {
+    position: absolute;
+    /* top: 554px; */
+    /* top: 953px; */
+    bottom: 30px;
+}
+
+#contact-info {
+    color: #4f6228;
+    font-size: 15px;
+    font-weight: bold;
+}
+/* Stylesheet: nav Modified On 2013-01-01 23:14:33 */
+/*** even 2 column style ***/
+
+#contentwrap .eventwocol {
+    margin-left: -3px; /* compensate 3px for left margin of elements */
+}
+
+#contentwrap .eventwocol img.header-like,
+#contentwrap .eventwocol div.header-like {
+    height: 335px;
+}
+
+#contentwrap .eventwocol img,
+#contentwrap .eventwocol div {
+    width: 374px;
+    height: 281px;
+    float: left;
+    margin-bottom: 4px;
+    margin-left: 3px;
+}
+
+#contentwrap .eventwocol div {
+    width: 364px;
+    padding: 0px 5px;
+    text-align: justify;
+    position: relative;
+}
+
+#contentwrap .eventwocol div dl,
+#contentwrap .eventwocol div p {
+    margin-top: 0;
+}
+
+#contentwrap .eventwocol div p.bottomline {
+    font-weight: bold;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    bottom: 22px;
+}
+
+/*** header-like style (i.e. header-height box), aligned at bottom ***/
+
+#contentwrap > div.header-like {
+    height: 339px;
+    margin: 0 0 6px;
+    padding: 0;
+    position: relative;
+}
+
+#contentwrap > div.header-like div {
+    position: absolute;
+    bottom: 0px;
+}
+
+#contentwrap > div.header-like p {
+    margin-bottom: 0;
+}
+
+/*** titles on side, text on right ***/
+
+#contentwrap div.side-titles h2 {
+    float: left;
+    width: 250px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 25px 0 0;
+    padding: 0;
+}
+
+#contentwrap div.side-titles h2:first-child {
+    margin-top: 0;
+}
+
+#contentwrap div.side-titles h2 + p {
+    margin-top: 25px;
+}
+
+#contentwrap div.side-titles p {
+    margin: 15px 0 0;
+    margin-left: 250px;
+}
+
+/*** text on right side, images on left ***/
+
+#contentwrap div.side-text {
+    height: 339px;
+    margin: 0 0 6px;
+    padding: 0;
+    position: relative;
+}
+
+#contentwrap div.side-text > img,
+#contentwrap div.side-text > iframe {
+    float: left;
+    width: 503px;
+}
+
+#contentwrap div.side-text > div {
+    margin-left: 507px;
+    position: absolute;
+    bottom: 0px;
+    text-align: justify;
+}
+
+#contentwrap div.side-text div p {
+    margin-bottom: 0px;
+}
+
+/*** title and image on left side ***/
+#contentwrap div.left-title-image {
+    margin-bottom: 30px;
+}
+
+#contentwrap div.left-title-image h2 {
+    margin-top: 50px;
+    float: left;
+    width: 390px;
+}
+
+#contentwrap div.left-title-image h2:first-child {
+    margin-top: 0px;
+}
+
+#contentwrap div.left-title-image img {
+    float: left;
+}
+
+#contentwrap div.left-title-image dl,
+#contentwrap div.left-title-image div {
+    margin: 50px 0px 0px 390px;
+}
+
+#contentwrap div.left-title-image h2:first-child + * + dl,
+#contentwrap div.left-title-image h2:first-child + * + div {
+    margin-top: 0px;
+}
+
+/*** link-list ***/
+#contentwrap ul.link-list {
+    margin: 0;
+    padding: 0;
+}
+
+#contentwrap ul.link-list li {
+    overflow: auto;
+    list-style-type: none;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+#contentwrap ul.link-list li img {
+    float: left;
+    /* height: 40px; */
+}
+
+#contentwrap ul.link-list li div {
+    margin-left: 220px;
+    width: 350px;
+}
+/* Stylesheet: content Modified On 2013-01-02 17:30:44 */
+
+table#free-dates {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table#free-dates td {
+    padding: 4px 7px;
+    white-space: nowrap;
+}
+
+table#free-dates col.text-col {
+    width: 100%;
+}
+
+table#free-dates tr.rowOcc td {
+    background-color: #ffaaaa;
+}
+
+table#free-dates tr.rowFree td {
+    background-color: #aaffaa;
+}

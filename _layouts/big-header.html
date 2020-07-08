@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>{{ page.title | upcase }} | CHÂLET BRIINIGSTEIN</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/default.css" />
+    <script src="/assets/js/is_summer.js"></script>
+    {% include analytics.html %}
+  </head>
+  <body>
+    <div id="outerwrap">
+      <div id="headline">
+        <span id="pagetitle">CHÂLET BRIINIGSTEIN</span>
+	{% include langselect.html %}
+        <img id="logo-right"
+             src="/assets/images/layout/logo_haslital.png"
+             alt="Logo Haslital"
+             width="129" height="43" />
+      </div>
+      <div id="header">
+	{% case page.season %}
+	{% when "summer" %}
+        <img src="/assets/images/layout/summer_header.jpg"
+             width="1024" height="335"
+             alt="Das Chalet im Sommer" />
+	{% when "winter" %}
+	<img src="/assets/images/layout/winter_header.jpg"
+             width="1024" height="335"
+             alt="Das Chalet im Winter" />
+	{% else %}
+	<script>
+	  if (is_summer()) {
+	    document.write('<img src="/assets/images/layout/summer_header.jpg" width="1024" height="335" alt="Das Chalet im Sommer" />');
+	  } else {
+	    document.write('<img src="/assets/images/layout/winter_header.jpg" width="1024" height="335" alt="Das Chalet im Winter" />');
+	  }
+	</script>
+	<noscript>
+	  <img src="/assets/images/layout/winter_header.jpg"
+               width="1024" height="335"
+               alt="Das Chalet im Winter" />
+	</noscript>
+	{% endcase %}
+      </div>
+      <div id="leftwrap">
+	{% include nav.html %}
+        <div id="contact-info">
+	  {% include contact.html %}
+        </div>
+      </div>
+
+      <div id="contentwrap">
+	{{ content }}
+      </div>
+    </div>
+  </body>
+</html>
