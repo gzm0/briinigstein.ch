@@ -1,0 +1,35 @@
+body {
+    font-family: sans-serif;
+}
+
+div.msgline {
+    margin: .4em 0;
+}
+
+#date_edit table {
+    border-collapse: collapse;
+}
+
+#date_edit table th {
+    text-align: left;
+}
+
+tr.rowOcc input,
+tr.rowOcc td {
+    background: #FFAAAA;
+}
+
+tr.rowFree td,
+tr.rowFree input {
+    background: #AAFFAA;
+}
+
+tr.rowDel td,
+tr.rowDel input {
+    background: #D0D0D0 !important;
+}
+
+input.date {
+    width: 10em;
+}
+
