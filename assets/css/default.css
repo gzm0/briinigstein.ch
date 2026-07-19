@@ -318,6 +318,16 @@ ul#nav li.cur a:visited {
     margin-top: 0px;
 }
 
+/*** mod / callout ***/
+#contentwrap div.callout {
+    background-color: #ffffaa;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 5px 7px;
+    margin-bottom: 9px;
+    border: solid #c1cc96 1px;
+}
+
 /*** link-list ***/
 #contentwrap ul.link-list {
     margin: 0;
