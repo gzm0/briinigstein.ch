@@ -1,14 +1,14 @@
 # Setup
 
 ```sh
-sudo gem install jekyll bundler
+gem install bundler
 bundle install
 ```
 
 # Run locally
 
 ```sh
-bundle exec jekyll serve
+bundle exec jekyll serve --livereload
 ```
 
 # Build
