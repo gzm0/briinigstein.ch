@@ -1,0 +1,31 @@
+name: main
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+
+      - name: Build site
+        run: bundle exec jekyll build
+
+      - name: Deploy over FTPS
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        with:
+          server: galvani.metanet.ch
+          protocol: ftps
+          username: github-action
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./_site/
+          server-dir: ./
