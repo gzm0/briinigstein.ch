@@ -1,11 +1,13 @@
 <?php
 
+require_once('edit.cfg.php');
+
 function get_db() {
 
     static $mysqli = null;
 
     if ($mysqli === null) {
-        $mysqli = new mysqli(/* redacted */);
+        $mysqli = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 
         if ($mysqli->connect_errno)
             die("Failed to connect to MySQL: " . $mysqli->connect_error);
